@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+}
+.section{
+    background-color: red;
+}
+.container{
+    background-color: green;
+    max-width: 1000px;
+    margin-inline: auto;
+    /* margin: 0 auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding-inline: 24px;
+    /* padding: 0 24px; */
+}
+.wapper{
+    background-color: blue;
+    /* padding: 64px 0; */
+    /* padding-top: 64px;
+    padding-bottom: 64px; */
+    padding-block: 64px;
+}
