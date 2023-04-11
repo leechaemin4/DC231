@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 기본 설정 content-box은 최종사이즈 계산하기어려움 */
+}
+.section {
+  background-color: red;
+}
+.container {
+  /* --paddinginlineValue */
+  --pXVal: 36px;
+  background-color: green;
+  max-width: 1200px + 2 * cal(var(--pXVal));
+  margin-inline: auto;
+  padding-inline: var(--pXVal);
+}
+.wrapper {
+  background-color: blue;
+}
