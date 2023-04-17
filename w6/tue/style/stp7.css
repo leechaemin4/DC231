@@ -5,36 +5,19 @@
 }
 
 .section {
-  background-color: transparent;
+  /* background-color: red; */
 }
 
 .container {
   /* background-color: green; */
-  max-width: 1048px;
+  max-width: 1328px;
   margin-inline: auto;
-  padding-inline: 24px;
+  padding-inline: 64px;
 }
 
 .wrapper {
-  /* background-color: blue */
+  /* background-color: blue; */
   padding-block: 64px;
-}
-
-.nav {
-  background-color: black;
-  color: white;
-  font-weight: 700;
-}
-.nav .wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-block: 12px;
-  align-items: baseline;
-}
-.nav__menuWrapper {
-  display: flex;
-  gap: 24px;
-  align-items: baseline;
 }
 
 .button {
@@ -53,6 +36,23 @@
   padding-inline: 0;
 }
 
+.nav {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+.nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-block: 12px;
+}
+.nav__menuWrapper {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+
 .main__media {
   background-color: rgb(209, 233, 255);
   overflow: hidden;
@@ -61,56 +61,52 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
-.main #hero1 {
+
+#hero1 {
   text-align: center;
 }
-.main #hero1 .button {
+#hero1 .button {
   margin-inline: auto;
 }
-.main #hero1 .button--type-text {
-  margin-bottom: 36px;
-}
-.main #hero1.main__text {
-  margin-inline: outo;
+#hero1 .main__text {
+  margin-inline: auto;
   max-width: 600px;
   margin-bottom: 24px;
 }
-.main #hero1.main__media {
+#hero1 .main__media {
   aspect-ratio: 16/9;
-  background-color: rgb(209, 233, 255);
 }
-.main #hero1 h2 {
+#hero1 h2 {
   margin-bottom: 16px;
 }
-.main #hero1 p {
+#hero1 p {
   margin-bottom: 24px;
 }
-.main #hero2 {
+
+#hero2 {
   background-color: aliceblue;
 }
-.main #hero2 .wrapper {
+#hero2 .wrapper {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.main #hero2 .wrapper > * {
+#hero2 .wrapper > * {
   flex: 1;
 }
-.main #hero2 .main__text__buttonWrapper {
-  margin-top: auto;
+#hero2 .main__text__buttonWrapper {
   display: flex;
   gap: 16px;
 }
-.main #hero2 .main__media {
+#hero2 .main__media {
   aspect-ratio: 4/3;
-  background-color: rgb(209, 233, 255);
 }
-.main h2 {
+#hero2 h2 {
   margin-bottom: 16px;
 }
-.main p {
+#hero2 p {
   max-width: 40ch;
   margin-bottom: 24px;
 }
