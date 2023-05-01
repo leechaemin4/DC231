@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* background-color: green; */
+  max-width: 1328px;
+  margin-inline: auto;
+  padding-inline: 64px;
+}
+
+.wrapper {
+  /* background-color: blue; */
+  padding-block: 1.875rem;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  container-type: inline-size;
+  container-name: nav;
+}
+.nav__logo {
+  width: 300px;
+  height: 50px;
+}
+.nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 10px;
+}
+.nav__menuWrapper {
+  gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-block: 12px;
+}
+@container nav (width < 42.5rem) {
+  .nav .nav__menuWrapper {
+    display: none;
+  }
+  .nav .lt680px {
+    display: unset;
+  }
+}
+
+.main__media {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bar .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bar .nav {
+  display: inline-block;
+  gap: 0.625rem;
+  padding-block: 0.75rem;
+}
+.bar .nav__ca {
+  display: flex;
+  gap: 0.9375rem;
+}
+
+.content {
+  container-type: inline-size;
+  container-name: product;
+}
+.content .container {
+  width: 100%;
+  justify-content: space-between;
+}
+.content .products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+.content .product__img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+@container product (width<44.375rem) {
+  .content .column:first {
+    grid-row: 1/span 1;
+  }
+  .content .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  container-type: inline-size;
+  container-name: footer;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer li {
+  list-style: none;
+}
+.footer svg {
+  fill: white;
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.footer h2 {
+  color: white;
+  font-size: 1rem;
+  margin-top: 4px;
+  margin-bottom: 1rem;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+}
+.footer .column__t {
+  color: rgb(171, 162, 162);
+  font-size: 10px;
+}
+@container .footer (width<44.375rem) {
+  .footer .column:first {
+    grid-row: 1/span 2;
+  }
+  .footer .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}

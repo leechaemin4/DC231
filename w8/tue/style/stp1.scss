@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* background-color: green; */
+  $padding-inline-value: 64px;
+  max-width: 1200px + 2 * $padding-inline-value;
+  margin-inline: auto;
+  padding-inline: $padding-inline-value;
+}
+.wrapper {
+  /* background-color: blue; */
+  padding-block: 1.875rem;
+}
+.nav {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  container-type: inline-size;
+  container-name: nav;
+
+  .container {
+  }
+
+  &__logo {
+    width: 300px;
+    height: 50px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 10px;
+  }
+  &__menuWrapper {
+    gap: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-block: 12px;
+  }
+
+  @container nav (width < 42.5rem) {
+    .nav__menuWrapper {
+      display: none;
+    }
+    .lt680px {
+      display: unset;
+    }
+  }
+}
+
+.hero1 {
+}
+
+.main {
+  &__media {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.bar {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav {
+    &__ca {
+      display: flex;
+      gap: 0.9375rem;
+    }
+    display: inline-block;
+    gap: 0.625rem;
+    padding-block: 0.75rem;
+  }
+}
+
+.content {
+  .container {
+    width: 100%;
+    justify-content: space-between;
+  }
+  container-type: inline-size;
+  container-name: product;
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+  }
+  .product__img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+  }
+  @container product (width<44.375rem) {
+    .column:first {
+      grid-row: 1 / span 1;
+    }
+    .wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  container-type: inline-size;
+  container-name: footer;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  li {
+    list-style: none;
+  }
+  svg {
+    fill: white;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+  h2 {
+    color: white;
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-bottom: 1rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+  }
+  .column__t {
+    color: rgb(171, 162, 162);
+    font-size: 10px;
+  }
+  @container .footer (width<44.375rem) {
+    .column:first {
+      grid-row: 1 / span 2;
+    }
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
