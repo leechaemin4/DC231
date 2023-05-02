@@ -91,12 +91,10 @@
   .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
   }
   .product__img {
     height: 300px;
     object-fit: cover;
-    object-position: center center;
   }
   @container product (width<44.375rem) {
     .column:first {
