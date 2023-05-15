@@ -71,6 +71,10 @@
   gap: 0.9375rem;
 }
 
+#hero3 {
+  justify-content: center;
+}
+
 .content {
   container-type: inline-size;
   container-name: product;
