@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main {
+  margin-inline: auto;
+  /* padding-inline: 32px;
+  max-width: 60ch; */
+  /* $ch 글자$개가 들어가는 .. */
+  width: min(70ch, 10%-2 * 32px);
+}
+
+p {
+  background-color: aqua;
+  margin: 0;
+}
+
+img,
+svg,
+video,
+iframe {
+  /* inline 이기때문에 틈새가 생김 */
+  margin: 0;
+  display: block;
+  max-width: 100%;
+}
